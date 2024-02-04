@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from "react";
-import { View, Text, Image, Pressable, TouchableOpacity } from "react-native";
+import { View, Text, Image, Pressable, TouchableOpacity, ScrollView } from "react-native";
 import { Header } from "../components/Header";
 import { subCategories } from "./constants/subcategories";
 
@@ -13,7 +13,7 @@ const Utilities = ({ navigation }) => {
     <View style={{ flex: 1 }}>
       <Header title="Utilidades" />
 
-      <View style={{ flexDirection: "column", flex: 1, marginTop: 16 }}>
+      <ScrollView style={{ flexDirection: "column", flex: 1, marginTop: 16 }}>
         {listSubCategories.map((subCategory) => (
           <TouchableOpacity
             key={subCategory.id}
@@ -27,9 +27,9 @@ const Utilities = ({ navigation }) => {
             <View
               style={{
                 backgroundColor: "#FBECB8",
-                marginLeft: 20,
-                width: 355,
-                height: 120,
+                marginLeft: 15,
+                width: "90%",
+                height: 110,
                 flexDirection: "row",
                 justifyContent: "flex-start",
                 alignItems: "center",
@@ -37,8 +37,8 @@ const Utilities = ({ navigation }) => {
             >
               <View
                 style={{
-                  width: 91,
-                  height: 100,
+                  width: 81,
+                  height: 90,
                   backgroundColor: "#FFFFFF",
                   borderRadius: 15,
                   marginLeft: 15,
@@ -84,7 +84,7 @@ const Utilities = ({ navigation }) => {
             </View>
           </TouchableOpacity>
         ))}
-      </View>
+      </ScrollView>
 
       <View style={{ flexDirection: "column", alignItems: "flex-end" }}>
         <View

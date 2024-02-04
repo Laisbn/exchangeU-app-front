@@ -26,8 +26,8 @@ const Asurance = ({ navigation }) => {
             <View
               style={{
                 backgroundColor: "#FBECB8",
-                marginLeft: 20,
-                width: 355,
+                marginLeft: 15,
+                width: "90%",
                 height: 120,
                 flexDirection: "row",
                 justifyContent: "flex-start",

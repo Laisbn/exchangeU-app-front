@@ -51,7 +51,7 @@ export const subCategories = [
   {
     id: 8,
     name: "Moradia",
-    description: "Dicas de como conseguir e organizar uma moradia.",
+    description: "Dicas de como organizar uma moradia.",
     image: require("../assets/house.png"),
     category: 3,
   },
@@ -93,21 +93,21 @@ export const subCategories = [
   {
     id: 14,
     name: "Créditos",
-    description: "Transferência, obtenção e necessidade.",
+    description: "Transferência, obtenção e                    necessidade.",
     image: require("../assets/checklist.png"),
     category: 5,
   },
   {
     id: 15,
     name: "Carga",
-    description: "Requisitos, políticas e organização.",
+    description: "Requisitos, políticas e                                  organização.",
     image: require("../assets/clock.png"),
     category: 5,
   },
   {
     id: 16,
     name: "Equivalência",
-    description: "Avaliação de conteúdo, comparação de currículos.",
+    description: "Avaliação de conteúdo,                       comparação de currículos.",
     image: require("../assets/balance.png"),
     category: 5,
   },
