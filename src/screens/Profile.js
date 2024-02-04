@@ -94,21 +94,22 @@ const Profile = ({ navigation }) => {
           style={{
             backgroundColor: "#BED5FF",
             width: "100%",
-            height: 250,
+            height: 280,
             borderColor: "#BED5FF",
             borderWidth: 5,
             borderBottomLeftRadius: 20,
             borderBottomRightRadius: 20,
             flexDirection: "column",
             alignItems: "center",
+            paddingTop:30
           }}
         >
           <View
             style={{
               height: 50,
-              width: 380,
-              marginTop: 50,
-              justifyContent: "center",
+              width:'100%',
+              justifyContent:'flex-start',
+              alignItems:'center',
               flexDirection: "row",
             }}
           >
@@ -118,20 +119,21 @@ const Profile = ({ navigation }) => {
                 style={{
                   height: 31,
                   width: 24,
-                  right: 150,
+                  marginLeft:15
                 }}
               />
             </Pressable>
+            <View>
             <Text
               style={{
                 fontSize: 20,
                 fontWeight: 800,
                 color: "#2264C7",
-                right: 10,
-              }}
-            >
+                marginLeft:'47%'
+              }}>
               Perfil
             </Text>
+            </View>
           </View>
           <View style={{ alignItems: "center", justifyContent: "center" }}>
             <Image
@@ -144,7 +146,7 @@ const Profile = ({ navigation }) => {
                 width: 150,
                 height: 150,
                 borderRadius: 150,
-                borderWidth: 3,
+                borderWidth: 8,
                 borderColor: "blue",
               }}
             />
@@ -207,7 +209,6 @@ const Profile = ({ navigation }) => {
             </Modal>
             <View
               style={{
-                width: 322,
                 height: 48,
                 borderColor: "#CACCCC",
                 backgroundColor: "#F1F5F4",
@@ -215,7 +216,8 @@ const Profile = ({ navigation }) => {
                 borderRadius: 15,
                 alignItems: "center",
                 justifyContent: "center",
-                paddingLeft: 22,
+                margin:10,
+                paddingLeft:15
               }}
             >
               <TextInput
@@ -231,8 +233,8 @@ const Profile = ({ navigation }) => {
             </View>
             <View
               style={{
-                width: 322,
                 height: 48,
+                margin:10,
                 marginTop: 15,
                 borderColor: "#CACCCC",
                 backgroundColor: "#F1F5F4",
@@ -256,8 +258,9 @@ const Profile = ({ navigation }) => {
             </View>
             <View
               style={{
-                width: 322,
+                width: 300,
                 height: 48,
+                margin:10,
                 marginTop: 15,
                 borderColor: "#CACCCC",
                 backgroundColor: "#F1F5F4",
@@ -266,7 +269,7 @@ const Profile = ({ navigation }) => {
                 alignItems: "center",
                 justifyContent: "center",
                 paddingLeft: 22,
-                marginBottom: 50,
+                marginBottom:20
               }}
             >
               <TextInput
@@ -280,33 +283,34 @@ const Profile = ({ navigation }) => {
                 defaultValue={profile?.college}
               />
             </View>
-            <View>
+            <View style={{justifyContent:'center', alignItems:'center'}}>
               <Button
                 title="Sair"
                 onPress={() => setModalVisible(true)}
                 style={{
-                  width: "100%",
+                  width: "90%",
                   alignItems: "center",
                   justifyContent: "center",
                 }}
               />
-            </View>
-          </View>
-          <View
-            style={{
-              alignItems: "center",
-              marginTop: -25,
-            }}
-          >
-            <Pressable onPress={() => navigation.navigate("Home")}>
+              <Pressable onPress={() => navigation.navigate("Home")}>
               <Image
                 source={require("./assets/logoSemFundo.png")}
                 style={{
                   height: 60,
                   width: 60,
+                  margin:10
                 }}
               />
             </Pressable>
+            </View>
+          </View>
+          <View
+            style={{
+              alignItems: "center",
+            }}
+          >
+            
           </View>
         </View>
       </>

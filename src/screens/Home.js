@@ -96,7 +96,7 @@ const Home = ({ navigation }) => {
                 <Text
                   style={{
                     paddingVertical: 1,
-                    fontSize: 30,
+                    fontSize: 25,
                     marginLeft: 10,
                     fontWeight: 800,
                     color: "#2264C7",
@@ -108,8 +108,8 @@ const Home = ({ navigation }) => {
               <Image
                 source={require("./assets/logoSemFundo.png")}
                 style={{
-                  height: 60,
-                  width: 60,
+                  height: 50,
+                  width: 50,
                 }}
               />
             </View>
@@ -118,9 +118,10 @@ const Home = ({ navigation }) => {
                 <Image
                   source={require("./assets/profileIcon.png")}
                   style={{
-                    height: 35,
-                    width: 35,
+                    height: 30,
+                    width: 30,
                     margin: 5,
+                    marginTop:12
                   }}
                 />
               </TouchableOpacity>
@@ -128,9 +129,10 @@ const Home = ({ navigation }) => {
                 <Image
                   source={require("./assets/infoIcon.png")}
                   style={{
-                    height: 35,
-                    width: 35,
+                    height: 30,
+                    width: 30,
                     margin: 5,
+                    marginTop:12
                   }}
                 />
               </TouchableOpacity>
@@ -258,7 +260,7 @@ const Home = ({ navigation }) => {
                     backgroundColor: "#FBECB8",
                     marginLeft: 20,
                     marginTop: 10,
-                    width: 355,
+                    width: "87%",
                     height: 57.7,
                     flexDirection: "row",
                     justifyContent: "flex-start",
@@ -305,7 +307,7 @@ const Home = ({ navigation }) => {
                     backgroundColor: "#FBECB8",
                     marginLeft: 20,
                     marginTop: 10,
-                    width: 355,
+                    width: "87%",
                     height: 57.7,
                     flexDirection: "row",
                     justifyContent: "flex-start",
@@ -352,7 +354,7 @@ const Home = ({ navigation }) => {
                     backgroundColor: "#FBECB8",
                     marginLeft: 20,
                     marginTop: 10,
-                    width: 355,
+                    width: "87%",
                     height: 57.7,
                     flexDirection: "row",
                     justifyContent: "flex-start",
@@ -399,7 +401,7 @@ const Home = ({ navigation }) => {
                     backgroundColor: "#FBECB8",
                     marginLeft: 20,
                     marginTop: 10,
-                    width: 355,
+                    width: "87%",
                     height: 57.7,
                     flexDirection: "row",
                     justifyContent: "flex-start",
@@ -446,7 +448,7 @@ const Home = ({ navigation }) => {
                     backgroundColor: "#FBECB8",
                     marginLeft: 20,
                     marginTop: 10,
-                    width: 355,
+                    width: "87%",
                     height: 57.7,
                     flexDirection: "row",
                     justifyContent: "flex-start",
@@ -504,8 +506,8 @@ const Home = ({ navigation }) => {
               <Image
                 source={require("./assets/visa.png")}
                 style={{
-                  height: 52,
-                  width: 52,
+                  height: 42,
+                  width: 42,
                   top: 2,
                 }}
               />
@@ -514,8 +516,8 @@ const Home = ({ navigation }) => {
               <Image
                 source={require("./assets/pig.png")}
                 style={{
-                  height: 45,
-                  width: 45,
+                  height: 40,
+                  width: 40,
                 }}
               />
             </TouchableOpacity>
@@ -523,8 +525,8 @@ const Home = ({ navigation }) => {
               <Image
                 source={require("./assets/tip.png")}
                 style={{
-                  height: 45,
-                  width: 45,
+                  height: 40,
+                  width: 40,
                 }}
               />
             </TouchableOpacity>
@@ -532,8 +534,8 @@ const Home = ({ navigation }) => {
               <Image
                 source={require("./assets/seguros.png")}
                 style={{
-                  height: 55,
-                  width: 55,
+                  height: 45,
+                  width: 45,
                   top: 2,
                 }}
               />
@@ -542,8 +544,8 @@ const Home = ({ navigation }) => {
               <Image
                 source={require("./assets/estude.png")}
                 style={{
-                  height: 45,
-                  width: 45,
+                  height: 40,
+                  width: 40,
                 }}
               />
             </TouchableOpacity>

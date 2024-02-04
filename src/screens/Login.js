@@ -54,20 +54,19 @@ const Login = ({ navigation }) => {
     >
       {isLoading && <Loading title={"Carregando a tela..."} />}
 
-      <View style={{ flexDirection: "column" }}>
+      <View style={{ flexDirection: "column", margin:20}}>
         <View
           style={{
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "flex-start",
-            marginHorizontal: 20,
           }}
         >
           <Image
             source={require("./assets/logoSemFundo.png")}
             style={{
-              height: 100,
-              width: 100,
+              height: 90,
+              width: 90,
             }}
           />
           <View
@@ -77,7 +76,7 @@ const Login = ({ navigation }) => {
           >
             <Text
               style={{
-                fontSize: 40,
+                fontSize: 35,
                 fontWeight: 800,
                 color: "#2264C7",
               }}
