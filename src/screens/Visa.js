@@ -34,9 +34,9 @@ const Visa = ({ navigation }) => {
             <View
               style={{
                 backgroundColor: "#FBECB8",
-                marginLeft: 20,
-                width: 355,
-                height: 120,
+                marginLeft: 15,
+                width: '90%',
+                height: 110,
                 flexDirection: "row",
                 justifyContent: "flex-start",
                 alignItems: "center",
@@ -44,8 +44,8 @@ const Visa = ({ navigation }) => {
             >
               <View
                 style={{
-                  width: 91,
-                  height: 100,
+                  width: 81,
+                  height: 90,
                   backgroundColor: "#FFFFFF",
                   borderRadius: 15,
                   marginLeft: 15,
@@ -57,8 +57,8 @@ const Visa = ({ navigation }) => {
                 <Image
                   source={subCategory.image}
                   style={{
-                    height: 60,
-                    width: 60,
+                    height: 50,
+                    width: 50,
                     position: "absolute",
                   }}
                 />

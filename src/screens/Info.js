@@ -33,8 +33,7 @@ const Info = ({ navigation }) => {
                             fontSize: 25,
                             fontWeight: 800,
                             color: '#2264C7',
-                            marginHorizontal: '28%'
-
+                            marginHorizontal: '25%'
                         }}>
                             Sobre
                         </Text>
@@ -42,9 +41,9 @@ const Info = ({ navigation }) => {
                 </View>
             </View>
 
-            <View style={{ flex: 1 }}>
-                <Text style={{ textAlign: 'justify', fontSize: 18, fontWeight: 'medium', margin: 30, color: 'black' }}>Este aplicativo foi desenvolvido como proposta de trabalho de conclusão de curso Bacharelado em Ciência da Computação por Laís Barros Nogueira sob orientação da Profa. Dra. Fernanda Carla de Oliveira pelo IFSP - São João da Boa Vista em 2023.</Text>
-                <Text style={{ textAlign: 'justify', fontSize: 18, fontWeight: 'medium', margin: 20, color: 'black' }}>Com o objetivo de contribuir com o planejamento e vivência de estudantes universitários em inter-câmbio acadêmico, por meio do desenvolvimento de um aplicativo híbrido colaborativoque permitirá a troca de informações de interesse deste público.</Text>
+            <View>
+                <Text style={{ textAlign: 'justify', fontSize: 18, fontWeight: 'medium', margin: 30, color: 'black' }}>Este aplicativo foi desenvolvido como proposta de trabalho de conclusão de curso Bacharelado em Ciência da Computação por Laís Barros Nogueira sob orientação da Profa. Dra. Fernanda Carla de Oliveira pelo IFSP - São João da Boa Vista em 2024.</Text>
+                <Text style={{ textAlign: 'justify', fontSize: 18, fontWeight: 'medium', margin: 30, color: 'black' }}>Com o objetivo de contribuir com o planejamento e vivência de estudantes universitários em intercâmbio acadêmico, por meio do desenvolvimento de um aplicativo híbrido colaborativoque permitirá a troca de informações de interesse deste público.</Text>
             </View>
 
             <View style={{

@@ -327,8 +327,8 @@ const styles = StyleSheet.create({
   modalView: {
     margin: 20,
     backgroundColor: "#BED5FF",
-    borderWidth: 2,
-    borderColor: "#E7BE29",
+    borderWidth: 1,
+    borderColor: "blue",
     borderRadius: 20,
     height: 189,
     width: 285,
@@ -352,10 +352,10 @@ const styles = StyleSheet.create({
     width: 87,
   },
   buttonOpen: {
-    backgroundColor: "#7AC943",
+    backgroundColor: "#EE5656",
   },
   buttonClose: {
-    backgroundColor: "#EE5656",
+    backgroundColor: "#7AC943",
   },
   textStyle: {
     color: "black",

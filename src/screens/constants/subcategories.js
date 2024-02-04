@@ -2,7 +2,7 @@ export const subCategories = [
   {
     id: 1,
     name: "Documentos",
-    description: "Documentação, carta, comprovantes, fotos e entre outros.",
+    description: "Documentação, carta, comprovantes e fotos",
     image: require("../assets/documentos.png"),
     category: 1,
   },
