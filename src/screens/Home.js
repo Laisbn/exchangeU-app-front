@@ -224,6 +224,7 @@ const Home = ({ navigation }) => {
                           setDestinySelected(country);
                           setModalDeleteCountryIsOpen(true);
                         }}
+                        style={{zIndex:999999}}
                       >
                         <Ionicons
                           name="remove-circle-sharp"

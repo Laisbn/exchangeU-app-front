@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { View, Image, Pressable, TextInput, Alert } from "react-native";
+import { View, Image, Pressable, TextInput, Alert, ScrollView } from "react-native";
 import React from "react";
 import { useState } from "react";
 import Button from "./assets/components/Button";
@@ -47,7 +47,7 @@ const NewDestiny = ({ navigation }) => {
   };
 
   const handleCreateNewDestiny = async () => {
-    if (name === "" && code === "") {
+    if (name === "" || code === "") {
       return setIsError(true);
     }
 
@@ -71,6 +71,7 @@ const NewDestiny = ({ navigation }) => {
 
       resetForm();
     } catch (error) {
+      console.log(error.response.data)
       Alert.alert(
         "Erro na criação do usuário",
         "Ocorreu um erro na criação do usuário, aguarde e tente novamente mais tarde"
@@ -84,6 +85,7 @@ const NewDestiny = ({ navigation }) => {
     <Loading />
   ) : (
     <>
+    <ScrollView style={{flex:1}}>
       <View style={{ flex: 1 }}>
         <Header title="Novo Destino" />
 
@@ -189,12 +191,15 @@ const NewDestiny = ({ navigation }) => {
             />
           </View>
           <View style={{ marginHorizontal: 35, alignSelf: "baseline" }}>
-            {isError && name === "" && (
+            {isError && code === "" && (
               <ErrorMessageInput text="A sigla do destino deve ser informado." />
             )}
           </View>
         </View>
-        <View style={{ paddingHorizontal: 32, marginBottom: 24 }}>
+        <View style={{ height:210}}>
+
+        </View>
+        <View style={{ paddingHorizontal: 32, marginBottom: 20, marginTop:15 }}>
           <Button
             title="Salvar"
             onPress={handleCreateNewDestiny}
@@ -209,7 +214,6 @@ const NewDestiny = ({ navigation }) => {
           style={{
             backgroundColor: "#BED5FF",
             width: "100%",
-            height: 75,
             borderColor: "#BED5FF",
             borderWidth: 5,
             marginTop: 15,
@@ -237,6 +241,7 @@ const NewDestiny = ({ navigation }) => {
           </View>
         </View>
       </View>
+      </ScrollView>
     </>
   );
 };
