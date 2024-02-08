@@ -544,8 +544,9 @@ const Home = ({ navigation }) => {
               <Image
                 source={require("./assets/estude.png")}
                 style={{
-                  height: 40,
-                  width: 40,
+                  height: 42,
+                  width: 42,
+                  marginTop:3
                 }}
               />
             </TouchableOpacity>
