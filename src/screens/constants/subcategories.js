@@ -93,7 +93,7 @@ export const subCategories = [
   {
     id: 14,
     name: "Créditos",
-    description: "Transferência, obtenção e                    necessidade.",
+    description: "Transferência, obtenção e                           necessidade.",
     image: require("../assets/checklist.png"),
     category: 5,
   },
@@ -107,7 +107,7 @@ export const subCategories = [
   {
     id: 16,
     name: "Equivalência",
-    description: "Avaliação de conteúdo,                       comparação de currículos.",
+    description: "Avaliação de conteúdo,                                   comparação de currículos.",
     image: require("../assets/balance.png"),
     category: 5,
   },

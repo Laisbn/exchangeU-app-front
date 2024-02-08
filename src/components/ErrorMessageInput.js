@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
   text: {
     alignSelf: "flex-start",
     marginTop: 2,
+    paddingLeft:26,
     fontWeight: "600",
     color: "#EE5656",
   },

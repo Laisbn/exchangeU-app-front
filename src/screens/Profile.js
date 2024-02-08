@@ -129,7 +129,8 @@ const Profile = ({ navigation }) => {
                 fontSize: 20,
                 fontWeight: 800,
                 color: "#2264C7",
-                marginLeft:'47%'
+                marginLeft:'50%'
+              
               }}>
               Perfil
             </Text>
@@ -226,6 +227,7 @@ const Profile = ({ navigation }) => {
                 keyboardType="ascii-capable"
                 style={{
                   width: "100%",
+                  color:'black'
                 }}
                 editable={false}
                 defaultValue={profile?.name}
@@ -251,6 +253,7 @@ const Profile = ({ navigation }) => {
                 keyboardType="email-address"
                 style={{
                   width: "100%",
+                  color:'black'
                 }}
                 editable={false}
                 defaultValue={profile?.email}
@@ -278,11 +281,13 @@ const Profile = ({ navigation }) => {
                 keyboardType="default"
                 style={{
                   width: "100%",
+                  color:"black"
                 }}
                 editable={false}
                 defaultValue={profile?.college}
               />
             </View>
+            <View>
             <View style={{justifyContent:'center', alignItems:'center'}}>
               <Button
                 title="Sair"
@@ -290,9 +295,10 @@ const Profile = ({ navigation }) => {
                 style={{
                   width: "90%",
                   alignItems: "center",
-                  justifyContent: "center",
+                  justifyContent: "center"
                 }}
               />
+              <View style={{height:100}}></View>
               <Pressable onPress={() => navigation.navigate("Home")}>
               <Image
                 source={require("./assets/logoSemFundo.png")}
@@ -304,13 +310,7 @@ const Profile = ({ navigation }) => {
               />
             </Pressable>
             </View>
-          </View>
-          <View
-            style={{
-              alignItems: "center",
-            }}
-          >
-            
+            </View>
           </View>
         </View>
       </>

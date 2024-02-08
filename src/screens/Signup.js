@@ -136,11 +136,11 @@ const Signup = ({ navigation }) => {
           width: "100%",
           height: 75,
           borderColor: "#BED5FF",
-          borderWidth: 5,
           borderBottomLeftRadius: 20,
           borderBottomRightRadius: 20,
           position: "relative",
         }}
+        horizontal={false}
       >
         <View style={{ marginTop: 35 }}>
           <Image
@@ -179,7 +179,7 @@ const Signup = ({ navigation }) => {
                 width: 120,
                 height: 120,
                 borderRadius: 120,
-                borderWidth: 3,
+                borderWidth: 5,
                 borderColor: "blue",
               }}
             />
@@ -344,8 +344,8 @@ const Signup = ({ navigation }) => {
             <View
               style={{
                 flexDirection: "column",
-                justifyContent: "space-around",
-                top: 50,
+                justifyContent: "space-around",   
+                marginTop:15        
               }}
             >
               <Button
@@ -353,9 +353,9 @@ const Signup = ({ navigation }) => {
                 onPress={handleCreateAccount}
                 style={{
                   width: "100%",
-                  marginBottom: 20,
                   alignItems: "center",
                   justifyContent: "center",
+                  marginBottom:15
                 }}
               />
               <Button
