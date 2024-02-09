@@ -75,7 +75,7 @@ export const CommentItem = ({ comment }) => {
   };
 
   return (
-    <View ref={commentRef}>
+    <View ref={commentRef} collapsable={false}>
       <View
         style={{
           backgroundColor: "#ccc",

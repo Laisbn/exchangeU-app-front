@@ -208,8 +208,8 @@ const CollegesDestiny = ({ navigation }) => {
           }}
         >
           <View
-            tyle={{
-              justifyContent: "center",
+            style={{
+              justifyContent: "center"
             }}
           >
             <Pressable onPress={() => navigation.navigate("Home")}>

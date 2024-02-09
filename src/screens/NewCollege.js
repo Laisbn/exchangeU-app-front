@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { View, Image, Pressable, TextInput, Alert } from "react-native";
+import { View, Image, Pressable, TextInput, Alert, ScrollView } from "react-native";
 import React from "react";
 import { useState } from "react";
 import Button from "./assets/components/Button";
@@ -76,6 +76,7 @@ const NewCollege = ({ navigation }) => {
 
       resetForm();
     } catch (error) {
+      console.log(error.response.data)
       Alert.alert(
         "Erro na criação do usuário",
         "Ocorreu um erro na criação do usuário, aguarde e tente novamente mais tarde"
@@ -89,6 +90,7 @@ const NewCollege = ({ navigation }) => {
     <Loading />
   ) : (
     <>
+    <ScrollView horizontal={false}>
       <View style={{ flex: 1 }}>
         <Header title="Nova instituição" />
 
@@ -124,7 +126,7 @@ const NewCollege = ({ navigation }) => {
               }}
             />
           </View>
-          <View style={{ marginTop: -30, marginLeft: 70 }}>
+          <View style={{ marginTop: -30, marginLeft: 70}}>
             <Pressable
               onPress={handleSelectPhoto}
               style={{ alignItems: "flex-end" }}
@@ -199,6 +201,7 @@ const NewCollege = ({ navigation }) => {
             )}
           </View>
         </View>
+        <View style = {{height: 213}}></View>
         <View style={{ paddingHorizontal: 32, marginBottom: 24 }}>
           <Button
             title="Salvar"
@@ -242,6 +245,7 @@ const NewCollege = ({ navigation }) => {
           </View>
         </View>
       </View>
+      </ScrollView>
     </>
   );
 };
