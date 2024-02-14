@@ -108,14 +108,14 @@ const CollegesDestiny = ({ navigation }) => {
                   style={{
                     backgroundColor: "#FBECB8",
                     marginLeft: 20,
-                    width: 355,
+                    width: "90%",
                     height: 120,
                     flexDirection: "row",
                     justifyContent: "flex-start",
                     alignItems: "center",
                   }}
                 >
-                  <View
+                  {/* <View
                     style={{
                       width: 91,
                       height: 100,
@@ -141,11 +141,11 @@ const CollegesDestiny = ({ navigation }) => {
                         objectFit: "scale-down",
                       }}
                     />
-                  </View>
-                  <View style={{ flexDirection: "column" }}>
+                  </View> */}
+                  <View style={{ flexDirection: "column", alignItems:'center', justifyContent:'center' }}>
                     <Text
                       style={{
-                        margin: 10,
+                        marginLeft: 20,
                         color: "black",
                         fontWeight: "800",
                         fontSize: 16,
