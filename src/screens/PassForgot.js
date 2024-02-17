@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from "react";
-import { View, Text, TextInput, Image, Pressable, Alert } from "react-native";
+import { View, Text, TextInput, Image, Pressable, Alert, ScrollView } from "react-native";
 
 import Button from "./assets/components/Button";
 
@@ -37,6 +37,7 @@ const PassForgot = ({ navigation }) => {
   };
 
   return (
+    <ScrollView>
     <View
       style={{
         backgroundColor: "#BED5FF",
@@ -52,7 +53,7 @@ const PassForgot = ({ navigation }) => {
           <Text
             style={{
               fontSize: 25,
-              top: 10,
+              marginTop: 100,
               fontWeight: 800,
               color: "#2264C7",
             }}
@@ -63,7 +64,7 @@ const PassForgot = ({ navigation }) => {
             style={{
               width: "90%",
               height: 48,
-              top: 50,
+              marginTop: 20,
               borderColor: "#CACCCC",
               backgroundColor: "#F1F5F4",
               borderWidth: 1,
@@ -91,7 +92,7 @@ const PassForgot = ({ navigation }) => {
               title="Enviar"
               onPress={handleForgotPassword}
               style={{
-                marginTop: 70,
+                marginTop: 30,
                 width:320,
                 marginBottom: 30,
                 alignItems: "center",
@@ -124,10 +125,12 @@ const PassForgot = ({ navigation }) => {
                 }}
               />
             </Pressable>
+            <View style={{height:10}}></View>
           </View>
         </>
       )}
     </View>
+    </ScrollView>
   );
 };
 
