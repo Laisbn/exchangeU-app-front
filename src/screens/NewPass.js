@@ -153,7 +153,7 @@ const NewPass = ({ navigation }) => {
           onPress={handleChangePassword}
           style={{
             marginTop: 120,
-            width: 350,
+            width:320,
             marginBottom: 30,
             alignItems: "center",
             justifyContent: "center",

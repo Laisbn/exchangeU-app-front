@@ -115,7 +115,7 @@ const CollegesDestiny = ({ navigation }) => {
                     alignItems: "center",
                   }}
                 >
-                  {/* <View
+                  <View
                     style={{
                       width: 91,
                       height: 100,
@@ -141,7 +141,7 @@ const CollegesDestiny = ({ navigation }) => {
                         objectFit: "scale-down",
                       }}
                     />
-                  </View> */}
+                  </View>
                   <View style={{ flexDirection: "column", alignItems:'center', justifyContent:'center' }}>
                     <Text
                       style={{
@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#E7BE29",
     borderRadius: 20,
-    height: 189,
+    height: 300,
     width: 285,
     padding: 35,
     alignItems: "center",

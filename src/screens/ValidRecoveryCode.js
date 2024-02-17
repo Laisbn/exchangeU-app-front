@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from "react";
-import { View, Text, TextInput, Image, Pressable, Alert } from "react-native";
+import { View, Text, TextInput, Image, Pressable, Alert, ScrollView } from "react-native";
 import { useRoute } from "@react-navigation/native";
 
 import Button from "./assets/components/Button";
@@ -51,6 +51,7 @@ const ValidRecoveryCode = ({ navigation }) => {
   };
 
   return (
+    <ScrollView>
     <View
       style={{
         backgroundColor: "#BED5FF",
@@ -66,7 +67,7 @@ const ValidRecoveryCode = ({ navigation }) => {
           <Text
             style={{
               fontSize: 25,
-              top: 10,
+              top: 50,
               fontWeight: 800,
               color: "#2264C7",
             }}
@@ -77,7 +78,7 @@ const ValidRecoveryCode = ({ navigation }) => {
             style={{
               width: "90%",
               height: 48,
-              top: 50,
+              top: 70,
               borderColor: "#CACCCC",
               backgroundColor: "#F1F5F4",
               borderWidth: 1,
@@ -99,13 +100,13 @@ const ValidRecoveryCode = ({ navigation }) => {
               }}
             />
           </View>
-          <View>
+          <View style={{alignItems:'center'}}>
             <Button
               title="Validar"
               onPress={handleValidateCode}
               style={{
-                marginTop: 70,
-                width: 350,
+                marginTop: 90,
+                width: 320,
                 marginBottom: 30,
                 alignItems: "center",
                 justifyContent: "center",
@@ -116,7 +117,7 @@ const ValidRecoveryCode = ({ navigation }) => {
               onPress={() => navigation.navigate("PassForgot")}
               style={{
                 marginTop: 340,
-                width: 350,
+                width: 320,
                 marginBottom: 15,
                 alignItems: "center",
                 justifyContent: "center",
@@ -138,9 +139,11 @@ const ValidRecoveryCode = ({ navigation }) => {
               />
             </Pressable>
           </View>
+          <View style={{height:70}}></View>
         </>
       )}
     </View>
+    </ScrollView>
   );
 };
 
