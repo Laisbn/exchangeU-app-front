@@ -86,13 +86,13 @@ const PassForgot = ({ navigation }) => {
               }}
             />
           </View>
-          <View>
+          <View style={{justifyContent:'center', alignItems:'center'}}>
             <Button
               title="Enviar"
               onPress={handleForgotPassword}
               style={{
                 marginTop: 70,
-                width: 350,
+                width:320,
                 marginBottom: 30,
                 alignItems: "center",
                 justifyContent: "center",
@@ -103,7 +103,7 @@ const PassForgot = ({ navigation }) => {
               onPress={() => navigation.navigate("Login")}
               style={{
                 marginTop: 340,
-                width: 350,
+                width: 320,
                 marginBottom: 15,
                 alignItems: "center",
                 justifyContent: "center",
